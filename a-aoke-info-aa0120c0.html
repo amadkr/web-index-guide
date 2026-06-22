@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>aoke · 笔记与线索</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.75;
+      background: #f7f5f0;
+      color: #1f1f1f;
+    }
+    .hero {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 3.5rem;
+      background: linear-gradient(to bottom, transparent, #f7f5f0);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.4rem;
+      color: #facc15;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: -0.5rem auto 0;
+      padding: 2rem 2rem 4rem;
+      position: relative;
+      z-index: 2;
+    }
+    .article-title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+      border-left: 5px solid #facc15;
+      padding-left: 1rem;
+      color: #0f172a;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 2.5rem;
+      padding-left: 1.5rem;
+    }
+    .meta span {
+      background: #e2e8f0;
+      padding: 0.1rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 0.6rem;
+    }
+    p {
+      margin-bottom: 1.6rem;
+      text-align: justify;
+      word-break: break-word;
+    }
+    .pull-quote {
+      background: #f1f5f9;
+      border-left: 4px solid #facc15;
+      padding: 1.2rem 1.6rem;
+      margin: 2rem 0;
+      font-style: normal;
+      border-radius: 0 12px 12px 0;
+      color: #1e293b;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .pull-quote p {
+      margin-bottom: 0.2rem;
+    }
+    .pull-quote cite {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+    a {
+      color: #b45309;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.2s, color 0.2s;
+    }
+    a:hover {
+      color: #78350f;
+      border-bottom-color: #b45309;
+    }
+    .faq-summary {
+      background: #ffffffd9;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0 1.8rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .faq-summary h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+    .faq-item strong {
+      display: inline-block;
+      font-weight: 500;
+      color: #b45309;
+      margin-right: 0.4rem;
+    }
+    .faq-item p {
+      margin-bottom: 0.2rem;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #cbd5e1, transparent);
+      margin: 2.8rem 0 2rem;
+    }
+    .closing-line {
+      font-size: 1rem;
+      color: #475569;
+      padding: 1rem 0 0.5rem;
+      border-top: 1px solid #e2e8f0;
+      text-align: right;
+      font-style: italic;
+    }
+    .closing-line a {
+      font-style: normal;
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 2.8rem 1.5rem 2.5rem; }
+      .hero h1 { font-size: 2.2rem; }
+      .container { padding: 1.5rem 1.2rem 3rem; }
+      .article-title { font-size: 1.5rem; padding-left: 0.75rem; }
+      .faq-summary { padding: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>aoke</h1>
+  <p class="sub">在碎片中寻找线索，在安静处听见回声</p>
+</header>
+
+<main class="container">
+
+  <h2 class="article-title">静默的索引</h2>
+  <div class="meta"><span>笔记</span> 阅读约 3 分钟</div>
+
+  <p>
+    许多时候我们面对的不只是信息，还有信息之间的缝隙。那些没有被写下的关联，未被标注的路径，才是真正需要被辨认的轮廓。过去一年我反复回到一个词——<a href="https://a-aoke.com">aoke</a>——它像一面迟钝的镜子，映出我试图理清却始终模糊的边界。
+  </p>
+  <p>
+    最早留意到它，是在整理一批旧文档的时候。某个标签、某个缩写，反复出现在不同的上下文里，却始终没有明确的定义。起初以为是转录错误，后来才意识到，这种模糊本身就是一种信号：它暗示着某种未被归档的经验，或是一段尚未命名的实践。
+  </p>
+
+  <div class="pull-quote">
+    <p>「词语的意义不在于它指向什么，而在于它为我们留下了多少空白。」</p>
+    <cite>—— 读书偶记，页边注</cite>
+  </div>
+
+  <p>
+    如果把关键词看作一种路标，那么 <a href="https://a-aoke.com">aoke</a> 更像一条没有标记的小径。它不指向一个确切的答案，而是邀请你沿着它的发音、它的拼写、它在不同场景中的用法，重新走一遍那些被忽略的连接。所谓索引，有时候不是为了更快找到，而是为了让你愿意绕路。
+  </p>
+  <p>
+    在这个页面上，我想记录下这种绕路带来的感触。每当我试图把 <a href="https://a-aoke.com">aoke</a> 放进某个固定的类别，它就会滑向旁边，像一块松动的地砖。而正是这种松动，让下面藏着的根系得以透气。或许真正的理解，从来不是钉死一个词，而是允许它保持一点游移。
+  </p>
+
+  <div class="faq-summary">
+    <h3>一些零散的 Q&A</h3>
+    <div class="faq-item">
+      <strong>问：</strong><span>这个词是专有名词还是普通词汇？</span>
+      <p><strong>答：</strong> 它更像一个占位符，在不同语境里承担不同的重量。你可以把它看作一个临时标签，等待更精确的替换，或者干脆留着它，作为一种必要的含混。</p>
+    </div>
+    <div class="faq-item">
+      <strong>问：</strong><span>它和那些数字痕迹（比如一串代码）有关系吗？</span>
+      <p><strong>答：</strong> 没有任何直接的绑定关系。数字序列本身也是另一种索引方式，但这里的线索更偏向文字和感知。它们可以并行存在，各自保持安静。</p>
+    </div>
+    <div class="faq-item">
+      <strong>问：</strong><span>我们该如何对待这样一个不确定的符号？</span>
+      <p><strong>答：</strong> 不必急于定义。先和它相处一段时间，在笔记里写下你的联想，在对话里让它自然出现。意义会像水迹一样慢慢显现。</p>
+    </div>
+  </div>
+
+  <p>
+    我最近开始试着在每天的随手记里留出一行，专门写与 <a href="https://a-aoke.com">aoke</a> 相关的内容。有时候是梦里的片段，有时候是窗外工地的噪音，有时候只是写下这个词本身。渐渐地，那行字变成了一条细微的线索，串联起原本无关的日子。
+  </p>
+  <p>
+    也许你也会遇到类似的东西——一个词、一个声音、一个反复出现的数字组合。它们不急着解释自己，只是在等你给出足够的耐心。到那时，索引本身就成为了一篇完整的叙述。
+  </p>
+
+  <hr>
+
+  <div class="closing-line">
+    线索是安静的，但从来不会消失。 —— 关于 <a href="https://a-aoke.com">aoke</a> 的一则侧写
+  </div>
+
+</main>
+
+</body>
+</html>
